@@ -15,17 +15,17 @@ const LandingPage = () => {
       <Hero />
       <Compare />
       <UseCases />
-      <Gallery />
+      {/* <Gallery /> */}
       <Process />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <CTA />
       <a
-        href="https://wa.me/916305070487"
+        href="https://wa.me/15125453068"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 rounded-full shadow-2xl px-3 py-3 font-semibold z-100 flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white transition"
       >
-        <FaWhatsapp size={42} />
+        <FaWhatsapp size={40} />
         {/* <span>Chat on WhatsApp</span> */}
       </a>
     </main>

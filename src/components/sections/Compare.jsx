@@ -119,6 +119,7 @@
 // components/sections/Compare.jsx
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
+import { Link } from "react-scroll";
 import {
   FaArrowLeft,
   FaArrowRight,
@@ -129,6 +130,12 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 import SectionTitle from "../ui/SectionTitle";
+import lraImg from "../../assets/images/LR-A.jpeg";
+import lrbImg from "../../assets/images/LR-B.jpeg";
+import officeaImg from "../../assets/images/office-A.jpg";
+import officebImg from "../../assets/images/office-B.jpg";
+import badroomaImg from "../../assets/images/bad-A.jpg";
+import badroombImg from "../../assets/images/bad-B.avif";
 
 const Compare = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -141,13 +148,13 @@ const Compare = () => {
     {
       id: 1,
       before: {
-        image: "https://picsum.photos/seed/blankwall/1200/800.jpg",
+        image: lraImg,
         title: "Blank Canvas",
         description:
           "A plain, uninspired wall with no character or personality.",
       },
       after: {
-        image: "https://picsum.photos/seed/designedwall/1200/800.jpg",
+        image: lrbImg,
         title: "Artistic Expression",
         description:
           "A vibrant, custom-designed wall that transforms the entire space.",
@@ -157,13 +164,13 @@ const Compare = () => {
     {
       id: 2,
       before: {
-        image: "https://picsum.photos/seed/plainoffice/1200/800.jpg",
+        image: officeaImg,
         title: "Corporate Blandness",
         description:
           "A standard office space that lacks inspiration and creativity.",
       },
       after: {
-        image: "https://picsum.photos/seed/creativeoffice/1200/800.jpg",
+        image: officebImg,
         title: "Creative Workspace",
         description:
           "An inspiring environment that boosts productivity and innovation.",
@@ -173,12 +180,12 @@ const Compare = () => {
     {
       id: 3,
       before: {
-        image: "https://picsum.photos/seed/basicbedroom/1200/800.jpg",
+        image: badroomaImg,
         title: "Basic Bedroom",
         description: "A simple bedroom with minimal character and comfort.",
       },
       after: {
-        image: "https://picsum.photos/seed/luxurybedroom/1200/800.jpg",
+        image: badroombImg,
         title: "Personal Sanctuary",
         description:
           "A luxurious retreat that reflects personal style and promotes relaxation.",
@@ -272,7 +279,11 @@ const Compare = () => {
     <section
       ref={containerRef}
       className="section-padding relative overflow-hidden"
-      style={{ backgroundColor: "#0A072C" }}
+      style={{ backgroundColor: "#1A1A3A" }}
+      // style={{
+      //   background:
+      //     "linear-gradient(135deg, #0A072C 0%, #1A1A3A 30%, #0A072C 100%)",
+      // }}
     >
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -331,13 +342,13 @@ const Compare = () => {
 
         {/* Before/After Comparison Slider */}
         <div className="relative max-w-6xl mx-auto overflow-hidden rounded-2xl shadow-2xl mb-8">
-          <div className="relative h-80 md:h-[450px]">
+          <div className="relative h-80 md:h-[500px]">
             {/* Before Image */}
             <div className="absolute inset-0">
               <img
                 src={currentComparison.before.image}
                 alt={currentComparison.before.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-fill"
               />
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
                 <h3 className="text-white text-xl font-bold mb-2">
@@ -359,7 +370,7 @@ const Compare = () => {
               <img
                 src={currentComparison.after.image}
                 alt={currentComparison.after.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-fill"
               />
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
                 <h3 className="text-white text-xl font-bold mb-2">
@@ -521,20 +532,40 @@ const Compare = () => {
         </div>
 
         {/* CTA Button */}
-
         <div className="text-center mt-16">
-          <motion.button
-            className="px-8 py-4 rounded-full text-white font-bold text-lg shadow-xl"
-            style={{ background: "linear-gradient(135deg, #FBC410, #E95F15)" }}
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "0 10px 20px rgba(251, 196, 16, 0.3)",
-            }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Transform Your Space Today
-          </motion.button>
+          <Link to="contact" smooth duration={500} offset={-90}>
+            <motion.button
+              className="px-8 py-4 rounded-full text-white font-bold text-lg shadow-xl"
+              style={{
+                background: "linear-gradient(135deg, #FBC410, #E95F15)",
+              }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 10px 20px rgba(251, 196, 16, 0.3)",
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Transform Your Space Today
+            </motion.button>
+          </Link>
         </div>
+        {/* <div className="text-center mt-16">
+          <a href="contact">
+            <motion.button
+              className="px-8 py-4 rounded-full text-white font-bold text-lg shadow-xl"
+              style={{
+                background: "linear-gradient(135deg, #FBC410, #E95F15)",
+              }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 10px 20px rgba(251, 196, 16, 0.3)",
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Transform Your Space Today
+            </motion.button>
+          </a>
+        </div> */}
       </div>
     </section>
   );

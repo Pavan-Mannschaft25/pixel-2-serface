@@ -506,24 +506,24 @@ import logo from "../../assets/images/px2-logo.png";
 
 const Footer = () => {
   const socialLinks = [
-    {
-      icon: <FaFacebook size={25} />,
-      url: "#",
-      color: "#1877F2", // Facebook Blue
-    },
+    // {
+    //   icon: <FaFacebook size={25} />,
+    //   url: "https://www.instagram.com/pixel2surface/",
+    //   color: "#1877F2", // Facebook Blue
+    // },
     {
       icon: <FaInstagram size={25} />,
-      url: "#",
+      url: "https://www.instagram.com/pixel2surface/",
       color: "#E4405F", // Instagram Pink/Red
     },
     {
       icon: <FaYoutube size={25} />,
-      url: "#",
+      url: "https://www.youtube.com/channel/UCNGDQFfLWq0Gj85rvk72xdQ",
       color: "#FF0000", // YouTube Red
     },
     {
       icon: <FaWhatsapp size={25} />,
-      url: "#",
+      url: "https://wa.me/15125453068",
       color: "#25D366", // WhatsApp Green
     },
   ];
@@ -533,10 +533,11 @@ const Footer = () => {
       {/* Main Footer Section with Gradient Background */}
       <div
         className="relative py-10"
-        style={{
-          background:
-            "linear-gradient(135deg, #0A072C 0%, #1A1A3A 50%, #0A072C 100%)",
-        }}
+        // style={{
+        //   background:
+        //     "linear-gradient(135deg, #0A072C 0%, #1A1A3A 50%, #0A072C 100%)",
+        // }}
+        style={{ backgroundColor: "#0A072C" }}
       >
         {/* Background Decorative Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -587,6 +588,7 @@ const Footer = () => {
                   <motion.a
                     key={index}
                     href={social.url}
+                    target="_blank"
                     className="w-12 h-12 rounded-full flex items-center justify-center text-white transition-all"
                     style={{ backgroundColor: social.color }}
                     whileHover={{ y: -3, scale: 1.1 }}
@@ -623,14 +625,14 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#gallery"
+                    href="#use-cases"
                     className="text-gray-400 hover:text-white transition-colors flex items-center"
                   >
                     <span
                       className="w-1 h-1 rounded-full mr-3"
                       style={{ backgroundColor: "#FBC410" }}
                     ></span>
-                    Gallery
+                    Use Cases
                   </a>
                 </li>
                 <li>
@@ -645,7 +647,7 @@ const Footer = () => {
                     Process
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="#testimonials"
                     className="text-gray-400 hover:text-white transition-colors flex items-center"
@@ -656,7 +658,7 @@ const Footer = () => {
                     ></span>
                     Testimonials
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="#contact"
@@ -764,11 +766,11 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center text-gray-400">
                   <FaEnvelope className="mr-3" style={{ color: "#1A4CB6" }} />
-                  <span>info@pixel2surface.com</span>
+                  <span>team.pixel2surface@gmail.com</span>
                 </div>
                 <div className="flex items-center text-gray-400">
                   <FaPhone className="mr-3" style={{ color: "#0C8FF2" }} />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+1 (512) 545-3068</span>
                 </div>
                 <div className="flex items-center text-gray-400">
                   <FaMapMarkerAlt

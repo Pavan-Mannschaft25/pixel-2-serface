@@ -117,6 +117,7 @@
 // components/sections/Process.jsx
 import React, { useState, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
+import { Link } from "react-scroll";
 import {
   FaRulerCombined,
   FaPalette,
@@ -128,11 +129,16 @@ import {
   FaPause,
 } from "react-icons/fa";
 import SectionTitle from "../ui/SectionTitle";
+import chooseWallImg from "../../assets/images/choose-wall.avif";
+import selectImg from "../../assets/images/pre-img.jpg";
+import preImg from "../../assets/images/pre2-img.jpeg";
+import printImg from "../../assets/images/print-img.jpg";
 
 const processSteps = [
   {
     id: 1,
     title: "Choose Wall",
+    img: chooseWallImg,
     description: "Select the wall you want to transform in your space.",
     icon: <FaRulerCombined />,
     color: "#1A4CB6",
@@ -145,6 +151,7 @@ const processSteps = [
   {
     id: 2,
     title: "Select Design",
+    img: selectImg,
     description: "Browse our collection or work with us on a custom design.",
     icon: <FaPalette />,
     color: "#0C8FF2",
@@ -157,6 +164,7 @@ const processSteps = [
   {
     id: 3,
     title: "Preview in 3D",
+    img: preImg,
     description:
       "See how the design will look in your space before installation.",
     icon: <FaCube />,
@@ -170,6 +178,7 @@ const processSteps = [
   {
     id: 4,
     title: "Print & Install",
+    img: printImg,
     description:
       "Our professionals handle the printing and installation process.",
     icon: <FaMagic />,
@@ -228,7 +237,11 @@ const Process = () => {
       id="process"
       ref={sectionRef}
       className="section-padding relative overflow-hidden"
-      style={{ backgroundColor: "#0A072C" }}
+      style={{ backgroundColor: "#1A1A3A" }}
+      // style={{
+      //   background:
+      //     "linear-gradient(135deg, #0A072C 0%, #1A1A3A 30%, #0A072C 100%)",
+      // }}
     >
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -494,7 +507,7 @@ const Process = () => {
             <div className="relative h-64 lg:h-80">
               <div className="absolute inset-0 rounded-xl overflow-hidden">
                 <img
-                  src={`https://picsum.photos/seed/step${activeStep + 1}/600/400.jpg`}
+                  src={processSteps[activeStep].img}
                   alt={processSteps[activeStep].title}
                   className="w-full h-full object-cover"
                 />
@@ -534,17 +547,21 @@ const Process = () => {
           <p className="text-xl text-white/80 mb-6">
             Ready to transform your space?
           </p>
-          <motion.button
-            className="px-8 py-4 rounded-full text-white font-bold text-lg shadow-xl"
-            style={{ background: "linear-gradient(135deg, #FBC410, #E95F15)" }}
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "0 10px 20px rgba(251, 196, 16, 0.3)",
-            }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Start Your Project
-          </motion.button>
+          <Link to="contact" smooth duration={500} offset={-90}>
+            <motion.button
+              className="px-8 py-4 rounded-full text-white font-bold text-lg shadow-xl"
+              style={{
+                background: "linear-gradient(135deg, #FBC410, #E95F15)",
+              }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 10px 20px rgba(251, 196, 16, 0.3)",
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Start Your Project
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>
