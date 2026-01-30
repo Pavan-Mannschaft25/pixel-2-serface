@@ -777,7 +777,7 @@ const Footer = () => {
                     className="mr-3"
                     style={{ color: "#A55E83" }}
                   />
-                  <span>123 Design Street, Creative City</span>
+                  <span>San Francisco, CA, USA</span>
                 </div>
               </div>
             </motion.div>

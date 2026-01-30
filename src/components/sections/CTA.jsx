@@ -793,7 +793,8 @@ const CTA = () => {
                       <div>
                         <h4 className="text-white font-medium">Office</h4>
                         <p className="text-white/80">
-                          123 Design Street, Creative City, CC 12345
+                          San Francisco Office 123 Market Street, Suite 450 San
+                          Francisco, CA 94103 USA
                         </p>
                       </div>
                     </div>
