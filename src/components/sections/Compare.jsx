@@ -132,10 +132,10 @@ import {
 import SectionTitle from "../ui/SectionTitle";
 import lraImg from "../../assets/images/LR-A.jpeg";
 import lrbImg from "../../assets/images/LR-B.jpeg";
-import officeaImg from "../../assets/images/office-A.jpg";
-import officebImg from "../../assets/images/office-B.jpg";
-import badroomaImg from "../../assets/images/bad-A.jpg";
-import badroombImg from "../../assets/images/bad-B.avif";
+import officeaImg from "../../assets/images/office_after.jpeg";
+import officebImg from "../../assets/images/office_before.jpeg";
+import badroomaImg from "../../assets/images/bedroom_after.jpeg";
+import badroombImg from "../../assets/images/bedroom_before.jpeg";
 
 const Compare = () => {
   const [sliderPosition, setSliderPosition] = useState(50);

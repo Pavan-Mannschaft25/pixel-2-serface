@@ -962,7 +962,7 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import Button from "../ui/Button";
 import { FaMouse } from "react-icons/fa";
-import pixel2Video from "../../assets/video/pixel2-hero-video.mp4";
+import pixel2Video from "../../assets/video/pixel2-video.mp4";
 
 // Single background video
 const bgVideo = {
