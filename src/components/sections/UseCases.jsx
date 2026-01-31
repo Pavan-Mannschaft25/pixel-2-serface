@@ -377,7 +377,7 @@ const UseCases = () => {
                     />
 
                     {/* Quick Actions */}
-                    <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {/* <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <button
                         className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/30 transition-colors"
                         onClick={(e) => {
@@ -400,7 +400,7 @@ const UseCases = () => {
                       >
                         <FaShare />
                       </button>
-                    </div>
+                    </div> */}
 
                     {/* Category Badge */}
                     <div className="absolute top-4 left-4">
@@ -428,10 +428,10 @@ const UseCases = () => {
                     <p className="text-white/80 mb-4">{useCase.description}</p>
 
                     {/* Stats */}
-                    <div className="flex justify-between text-sm text-white/60 mb-4">
+                    {/* <div className="flex justify-between text-sm text-white/60 mb-4">
                       <span>{useCase.stats.projects} Projects</span>
                       <span>{useCase.stats.satisfaction} Satisfaction</span>
-                    </div>
+                    </div> */}
 
                     {/* View More Button */}
                     <button className="flex items-center text-white font-medium hover:text-blue-400 transition-colors">
@@ -442,29 +442,38 @@ const UseCases = () => {
                 </>
               ) : (
                 <>
-                  <div className="w-48 h-32 overflow-hidden flex-shrink-0">
-                    <img
-                      src={useCase.image}
-                      alt={useCase.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="flex-1 p-6">
-                    <div className="flex items-center mb-4">
-                      <div
-                        className="w-10 h-10 rounded-full flex items-center justify-center text-white mr-3"
-                        style={{ backgroundColor: useCase.color }}
-                      >
-                        {useCase.icon}
-                      </div>
-                      <h3 className="text-xl font-bold text-white">
-                        {useCase.title}
-                      </h3>
+                  {/* Mobile: Image on top, content below */}
+                  {/* Desktop: Image on left, content on right */}
+                  <div className="flex flex-col md:flex-row">
+                    {/* Image container - full width on mobile, fixed width on desktop */}
+                    <div className="w-full md:w-48 h-48 md:h-38 overflow-hidden flex-shrink-0">
+                      <img
+                        src={useCase.image}
+                        alt={useCase.title}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    <p className="text-white/80 mb-4">{useCase.description}</p>
-                    <div className="flex justify-between text-sm text-white/60">
-                      <span>{useCase.stats.projects} Projects</span>
-                      <span>{useCase.stats.satisfaction} Satisfaction</span>
+
+                    {/* Content container */}
+                    <div className="flex-1 p-4 md:p-6">
+                      <div className="flex items-center mb-4">
+                        <div
+                          className="w-10 h-10 rounded-full flex items-center justify-center text-white mr-3"
+                          style={{ backgroundColor: useCase.color }}
+                        >
+                          {useCase.icon}
+                        </div>
+                        <h3 className="text-xl font-bold text-white">
+                          {useCase.title}
+                        </h3>
+                      </div>
+                      <p className="text-white/80 mb-4">
+                        {useCase.description}
+                      </p>
+                      {/* <div className="flex justify-between text-sm text-white/60">
+        <span>{useCase.stats.projects} Projects</span>
+        <span>{useCase.stats.satisfaction} Satisfaction</span>
+      </div> */}
                     </div>
                   </div>
                 </>
@@ -611,7 +620,7 @@ const UseCases = () => {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-2 gap-4 mb-6">
+              {/* <div className="grid grid-cols-2 gap-4 mb-6">
                 <div
                   className="rounded-lg p-4 text-white"
                   style={{ backgroundColor: selectedUseCase.color }}
@@ -630,7 +639,7 @@ const UseCases = () => {
                   </div>
                   <div className="text-sm opacity-90">Client Satisfaction</div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Testimonial */}
               <div className="bg-gray-50 rounded-lg p-6 mb-6">
@@ -670,7 +679,7 @@ const UseCases = () => {
               </div>
 
               {/* Action Buttons */}
-              <div className="flex gap-3">
+              {/* <div className="flex gap-3">
                 <button
                   className="px-6 py-3 text-white rounded-lg font-medium hover:shadow-lg transition-all flex-1"
                   style={{ backgroundColor: selectedUseCase.color }}
@@ -680,7 +689,7 @@ const UseCases = () => {
                 <button className="px-6 py-3 bg-gray-100 text-gray-700 rounded-lg font-medium hover:bg-gray-200 transition-colors flex-1">
                   Get Quote
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

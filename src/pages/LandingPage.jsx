@@ -20,7 +20,7 @@ const LandingPage = () => {
       {/* <Testimonials /> */}
       <CTA />
       <a
-        href="https://wa.me/15125453068"
+        href="https://wa.me/19258194412"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 rounded-full shadow-2xl px-3 py-3 font-semibold z-100 flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white transition"

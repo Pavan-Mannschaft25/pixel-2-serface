@@ -977,7 +977,7 @@ const Hero = () => {
     <section
       id="home"
       ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative h-80 md:min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background Video */}
       <div className="absolute inset-0 z-0">

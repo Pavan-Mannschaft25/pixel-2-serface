@@ -597,7 +597,7 @@ const CTA = () => {
     {
       icon: <FaInstagram size={25} />,
       url: "https://www.instagram.com/pixel2surface/",
-      color: "#E4405F", // Instagram Pink/Red
+      color: "#E4405F",
     },
     {
       icon: <FaYoutube size={25} />,
@@ -606,7 +606,7 @@ const CTA = () => {
     },
     {
       icon: <FaWhatsapp size={25} />,
-      url: "https://wa.me/15125453068",
+      url: "https://wa.me/19258194412",
       color: "#25D366", // WhatsApp Green
     },
   ];
@@ -764,7 +764,7 @@ const CTA = () => {
                       </div>
                       <div>
                         <h4 className="text-white font-medium">Phone</h4>
-                        <p className="text-white/80">+1 (512) 545-3068</p>
+                        <p className="text-white/80">+1 (925) 819-4412</p>
                       </div>
                     </div>
 
@@ -792,10 +792,7 @@ const CTA = () => {
                       </div>
                       <div>
                         <h4 className="text-white font-medium">Office</h4>
-                        <p className="text-white/80">
-                          San Francisco Office 123 Market Street, Suite 450 San
-                          Francisco, CA 94103 USA
-                        </p>
+                        <p className="text-white/80">San Ramon, CA, USA</p>
                       </div>
                     </div>
                   </div>

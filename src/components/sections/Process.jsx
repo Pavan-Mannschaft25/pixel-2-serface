@@ -343,12 +343,12 @@ const Process = () => {
                 </motion.div>
 
                 {/* Step Number */}
-                <div
+                {/* <div
                   className="absolute -top-2 -right-2 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm"
                   style={{ backgroundColor: step.color }}
                 >
                   {index + 1}
-                </div>
+                </div> */}
 
                 {/* Step Content */}
                 <motion.div
@@ -485,22 +485,32 @@ const Process = () => {
                 ))}
               </ul>
               <div className="flex gap-4">
-                <button
-                  className="px-6 py-3 rounded-lg text-white font-medium flex items-center gap-2 transition-all"
-                  style={{ backgroundColor: processSteps[activeStep].color }}
-                  whileHover={{ scale: 1.05, x: 5 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Learn More
-                  <FaArrowRight />
-                </button>
-                <button
-                  className="px-6 py-3 rounded-lg text-white font-medium border border-white/30 hover:bg-white/10 transition-all"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  View Examples
-                </button>
+                <div>
+                  <Link to="transform" smooth duration={500} offset={-90}>
+                    <button
+                      className="px-6 py-3 rounded-lg text-white font-medium flex items-center gap-2 transition-all"
+                      style={{
+                        backgroundColor: processSteps[activeStep].color,
+                      }}
+                      whileHover={{ scale: 1.05, x: 5 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      Learn More
+                      <FaArrowRight />
+                    </button>
+                  </Link>
+                </div>
+                <div>
+                  <Link to="use-cases" smooth duration={500} offset={-90}>
+                    <button
+                      className="px-6 py-3 rounded-lg text-white font-medium border border-white/30 hover:bg-white/10 transition-all"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      View Examples
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
 

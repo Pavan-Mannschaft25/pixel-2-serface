@@ -523,7 +523,7 @@ const Footer = () => {
     },
     {
       icon: <FaWhatsapp size={25} />,
-      url: "https://wa.me/15125453068",
+      url: "https://wa.me/19258194412",
       color: "#25D366", // WhatsApp Green
     },
   ];
@@ -766,18 +766,18 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center text-gray-400">
                   <FaEnvelope className="mr-3" style={{ color: "#1A4CB6" }} />
-                  <span>team.pixel2surface@gmail.com</span>
+                  <span className="w-1/2">team.pixel2surface@gmail.com</span>
                 </div>
                 <div className="flex items-center text-gray-400">
                   <FaPhone className="mr-3" style={{ color: "#0C8FF2" }} />
-                  <span>+1 (512) 545-3068</span>
+                  <span>+1 (925) 819-4412</span>
                 </div>
                 <div className="flex items-center text-gray-400">
                   <FaMapMarkerAlt
                     className="mr-3"
                     style={{ color: "#A55E83" }}
                   />
-                  <span>San Francisco, CA, USA</span>
+                  <span>San Ramon, CA, USA</span>
                 </div>
               </div>
             </motion.div>
