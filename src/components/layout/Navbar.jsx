@@ -724,6 +724,7 @@ const Navbar = () => {
                 </motion.button> */}
                 <Link to="contact" smooth duration={500} offset={-90}>
                   <motion.button
+                    onClick={() => setMobileMenuOpen(false)}
                     className="w-full px-4 py-3 rounded-full font-medium text-white"
                     style={{
                       background: "linear-gradient(135deg, #FBC410, #E95F15)",

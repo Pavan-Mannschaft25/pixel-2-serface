@@ -530,6 +530,7 @@ import {
   FaWhatsapp,
   FaArrowRight,
   FaCheckCircle,
+  FaLinkedinIn,
 } from "react-icons/fa";
 import Button from "../ui/Button";
 
@@ -598,6 +599,11 @@ const CTA = () => {
       icon: <FaInstagram size={25} />,
       url: "https://www.instagram.com/pixel2surface/",
       color: "#E4405F",
+    },
+    {
+      icon: <FaLinkedinIn size={25} />,
+      url: "https://www.linkedin.com/in/pixel-surface-8167823a9/",
+      color: "#0A66C2",
     },
     {
       icon: <FaYoutube size={25} />,

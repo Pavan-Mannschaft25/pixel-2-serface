@@ -492,7 +492,7 @@ import {
   FaInstagram,
   FaTwitter,
   FaYoutube,
-  FaLinkedin,
+  FaLinkedinIn,
   FaPinterest,
   FaWhatsapp,
   FaEnvelope,
@@ -515,6 +515,11 @@ const Footer = () => {
       icon: <FaInstagram size={25} />,
       url: "https://www.instagram.com/pixel2surface/",
       color: "#E4405F", // Instagram Pink/Red
+    },
+    {
+      icon: <FaLinkedinIn size={25} />,
+      url: "https://www.linkedin.com/in/pixel-surface-8167823a9/",
+      color: "#0A66C2",
     },
     {
       icon: <FaYoutube size={25} />,
@@ -612,40 +617,44 @@ const Footer = () => {
               </h4>
               <ul className="space-y-3">
                 <li>
-                  <a
-                    href="#home"
-                    className="text-gray-400 hover:text-white transition-colors flex items-center"
-                  >
-                    <span
-                      className="w-1 h-1 rounded-full mr-3"
-                      style={{ backgroundColor: "#FBC410" }}
-                    ></span>
-                    Home
-                  </a>
+                  <Link to="home" smooth duration={500} offset={-90}>
+                    <div className="cursor-pointer">
+                      <p className="text-gray-400 hover:text-white transition-colors flex items-center">
+                        <span
+                          className="w-1 h-1 rounded-full mr-3"
+                          style={{ backgroundColor: "#FBC410" }}
+                        ></span>
+                        Home
+                      </p>
+                    </div>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="use-cases" smooth duration={500} offset={-90}>
+                    <div className="cursor-pointer">
+                      <p className="text-gray-400 hover:text-white transition-colors flex items-center">
+                        <span
+                          className="w-1 h-1 rounded-full mr-3"
+                          style={{ backgroundColor: "#FBC410" }}
+                        ></span>
+                        Use Cases
+                      </p>
+                    </div>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#use-cases"
-                    className="text-gray-400 hover:text-white transition-colors flex items-center"
-                  >
-                    <span
-                      className="w-1 h-1 rounded-full mr-3"
-                      style={{ backgroundColor: "#FBC410" }}
-                    ></span>
-                    Use Cases
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#process"
-                    className="text-gray-400 hover:text-white transition-colors flex items-center"
-                  >
-                    <span
-                      className="w-1 h-1 rounded-full mr-3"
-                      style={{ backgroundColor: "#FBC410" }}
-                    ></span>
-                    Process
-                  </a>
+                  <Link to="process" smooth duration={500} offset={-90}>
+                    <div className="cursor-pointer">
+                      <p className="text-gray-400 hover:text-white transition-colors flex items-center">
+                        <span
+                          className="w-1 h-1 rounded-full mr-3"
+                          style={{ backgroundColor: "#FBC410" }}
+                        ></span>
+                        Process
+                      </p>
+                    </div>
+                  </Link>
                 </li>
                 {/* <li>
                   <a
@@ -660,16 +669,20 @@ const Footer = () => {
                   </a>
                 </li> */}
                 <li>
-                  <a
-                    href="#contact"
-                    className="text-gray-400 hover:text-white transition-colors flex items-center"
-                  >
-                    <span
-                      className="w-1 h-1 rounded-full mr-3"
-                      style={{ backgroundColor: "#FBC410" }}
-                    ></span>
-                    Contact
-                  </a>
+                  <Link to="contact" smooth duration={500} offset={-90}>
+                    <div className="cursor-pointer">
+                      <p
+                        href="#contact"
+                        className="text-gray-400 hover:text-white transition-colors flex items-center"
+                      >
+                        <span
+                          className="w-1 h-1 rounded-full mr-3"
+                          style={{ backgroundColor: "#FBC410" }}
+                        ></span>
+                        Contact
+                      </p>
+                    </div>
+                  </Link>
                 </li>
               </ul>
             </motion.div>
