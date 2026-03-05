@@ -22,37 +22,37 @@ import {
 } from "react-icons/fa";
 import SectionTitle from "../ui/SectionTitle";
 //Home images
-import h1Img from "../../assets/home/H-2.jpg";
-import h2Img from "../../assets/home/H-3.jpg";
-import h3Img from "../../assets/home/H-6.jpg";
-import h4Img from "../../assets/home/H-7.jpeg";
+import h1Img from "../../assets/pixelImages/wiw/home_small.png";
+import h2Img from "../../assets/pixelImages/wiw/home_small.png";
+import h3Img from "../../assets/pixelImages/wiw/home_small.png";
+import h4Img from "../../assets/pixelImages/wiw/home_small.png";
 //office images
-import office1Img from "../../assets/office/Off-3.avif";
-import office2Img from "../../assets/office/Off-4.jpg";
-import office3Img from "../../assets/office/Off-1.jpg";
-import office4Img from "../../assets/office/Off-2.jpg";
+import office1Img from "../../assets/pixelImages/wiw/office_small.png";
+import office2Img from "../../assets/pixelImages/wiw/office_small.png";
+import office3Img from "../../assets/pixelImages/wiw/office_small.png";
+import office4Img from "../../assets/pixelImages/wiw/office_small.png";
 //Hotel images
-import hotel1Img from "../../assets/hotel/Hot-3.avif";
-import hotel2Img from "../../assets/hotel/Hot-2.webp";
-import hotel3Img from "../../assets/hotel/Hot-4.jpeg";
-import hotel4Img from "../../assets/hotel/Hot-1.jpg";
+import hotel1Img from "../../assets/pixelImages/wiw/hotel_small.png";
+import hotel2Img from "../../assets/pixelImages/wiw/hotel_small.png";
+import hotel3Img from "../../assets/pixelImages/wiw/hotel_small.png";
+import hotel4Img from "../../assets/pixelImages/wiw/hotel_small.png";
 //school images
-import school1Img from "../../assets/school/s-2.jpg";
-import school2Img from "../../assets/school/s-3.jpg";
-import school3Img from "../../assets/school/s-4.jpg";
-import school4Img from "../../assets/school/s-5.jpg";
-import school5Img from "../../assets/school/s-6.jpg";
+import school1Img from "../../assets/pixelImages/wiw/school_small.png";
+import school2Img from "../../assets/pixelImages/wiw/school_small.png";
+import school3Img from "../../assets/pixelImages/wiw/school_small.png";
+import school4Img from "../../assets/pixelImages/wiw/school_small.png";
+import school5Img from "../../assets/pixelImages/wiw/school_small.png";
 //showroom images
-import showroom1Img from "../../assets/showroom/sho-1.jpg";
-import showroom2Img from "../../assets/showroom/sho-2.jpg";
-import showroom3Img from "../../assets/showroom/sho-3.jpg";
-import showroom4Img from "../../assets/showroom/sho-4.jpg";
+import showroom1Img from "../../assets/pixelImages/wiw/showroom_small.png";
+import showroom2Img from "../../assets/pixelImages/wiw/showroom_small.png";
+import showroom3Img from "../../assets/pixelImages/wiw/showroom_small.png";
+import showroom4Img from "../../assets/pixelImages/wiw/showroom_small.png";
 //restaurant images
-import restaurant1Img from "../../assets/restaurant/rest-1.jpg";
-import restaurant2Img from "../../assets/restaurant/rest-2.jpg";
-import restaurant3Img from "../../assets/restaurant/rest-3.jpg";
-import restaurant4Img from "../../assets/restaurant/rest-5.jpg";
-import restaurant5Img from "../../assets/restaurant/rest-6.jpg";
+import restaurant1Img from "../../assets/pixelImages/wiw/restuarent_small.png";
+import restaurant2Img from "../../assets/pixelImages/wiw/restuarent_small.png";
+import restaurant3Img from "../../assets/pixelImages/wiw/restuarent_small.png";
+import restaurant4Img from "../../assets/pixelImages/wiw/restuarent_small.png";
+import restaurant5Img from "../../assets/pixelImages/wiw/restuarent_small.png";
 
 const useCases = [
   {
